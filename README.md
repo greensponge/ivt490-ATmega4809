@@ -4,7 +4,7 @@ I've cobbled together this solution using guides from some Swedish pump forums a
 
 # Problem
 I wanted to capture data from my IVT-490 pump and store it in a Postgres database, make some fancy graphs and generally monitor what's going on. Initially I thought about using a Raspberry PI for this project, 
-however it is non-trivial to use this board because the TTL on a Raspberry is 3.3V, which means you need to protect the pins if you're planning receiving higher voltage. 
+however it is non-trivial to use this board because the TTL on a Raspberry is 3.3V, which means you need to protect the pins if you're planning on receiving a higher voltage. 
 
 It's certainly doable, but it was too much of a hassle for me since Raspberrys are stupid expensive at this point in time, and if I'm buying a new board anyway then it might as well use the right TTL to begin with.
 The IVT-490 TTL signals are 5V. Because of this I opted to use an Arduino board which typically has 5V TTL for its boards AFAIK. I didn't want to use network cables so I needed a board that had WiFi included,
